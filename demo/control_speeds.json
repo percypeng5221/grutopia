@@ -1,0 +1,22 @@
+{
+    "objects": [
+        {
+            "name": "table",
+            "position": {
+                "x": 5.5,
+                "y": -1.5,
+                "z": 0.5
+            },
+            "reason": "The table is nearby and could be an obstacle to navigate around."
+        },
+        {
+            "name": "sofa",
+            "position": {
+                "x": 5.7,
+                "y": -1.6,
+                "z": 0.4
+            },
+            "reason": "The sofa is part of the environment and could be an obstacle to avoid."
+        }
+    ]
+}

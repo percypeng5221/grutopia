@@ -1,0 +1,113 @@
+<robot name="kitchen_dining_scene">
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <box size="0.1 0.1 0.1"/>
+      </geometry>
+      <material name="grey"/>
+    </visual>
+  </link>
+
+  <!-- Dining Table -->
+  <link name="dining_table">
+    <visual>
+      <geometry>
+        <box size="2 1 0.05"/>
+      </geometry>
+      <material name="table_material"/>
+    </visual>
+  </link>
+  <joint name="base_to_dining_table" type="fixed">
+    <parent link="base_link"/>
+    <child link="dining_table"/>
+    <origin xyz="1 0 0.75"/>
+  </joint>
+
+  <!-- Chairs -->
+  <link name="chair_1">
+    <visual>
+      <geometry>
+        <cylinder radius="0.2" length="0.9"/>
+      </geometry>
+      <material name="chair_material"/>
+    </visual>
+  </link>
+  <joint name="dining_table_to_chair_1" type="fixed">
+    <parent link="dining_table"/>
+    <child link="chair_1"/>
+    <origin xyz="-0.8 0.8 -0.45"/>
+  </joint>
+
+  <link name="chair_2">
+    <visual>
+      <geometry>
+        <cylinder radius="0.2" length="0.9"/>
+      </geometry>
+      <material name="chair_material"/>
+    </visual>
+  </link>
+  <joint name="dining_table_to_chair_2" type="fixed">
+    <parent link="dining_table"/>
+    <child link="chair_2"/>
+    <origin xyz="0.8 0.8 -0.45"/>
+  </joint>
+
+  <!-- Kitchen Counter -->
+  <link name="kitchen_counter">
+    <visual>
+      <geometry>
+        <box size="2 0.75 1"/>
+      </geometry>
+      <material name="counter_material"/>
+    </visual>
+  </link>
+  <joint name="base_to_kitchen_counter" type="fixed">
+    <parent link="base_link"/>
+    <child link="kitchen_counter"/>
+    <origin xyz="3 0 0.5"/>
+  </joint>
+
+  <!-- Bar Stools -->
+  <link name="bar_stool_1">
+    <visual>
+      <geometry>
+        <cylinder radius="0.15" length="0.8"/>
+      </geometry>
+      <material name="stool_material"/>
+    </visual>
+  </link>
+  <joint name="kitchen_counter_to_stool_1" type="fixed">
+    <parent link="kitchen_counter"/>
+    <child link="bar_stool_1"/>
+    <origin xyz="-0.5 -0.1 -0.4"/>
+  </joint>
+
+  <link name="bar_stool_2">
+    <visual>
+      <geometry>
+        <cylinder radius="0.15" length="0.8"/>
+      </geometry>
+      <material name="stool_material"/>
+    </visual>
+  </link>
+  <joint name="kitchen_counter_to_stool_2" type="fixed">
+    <parent link="kitchen_counter"/>
+    <child link="bar_stool_2"/>
+    <origin xyz="0.5 -0.1 -0.4"/>
+  </joint>
+
+  <!-- Materials -->
+  <material name="table_material">
+    <color rgba="0.8 0.6 0.4 1"/>
+  </material>
+  <material name="chair_material">
+    <color rgba="0.9 0.9 0.9 1"/>
+  </material>
+  <material name="counter_material">
+    <color rgba="0.9 0.9 0.9 1"/>
+  </material>
+  <material name="stool_material">
+    <color rgba="0.7 0.4 0.3 1"/>
+  </material>
+
+</robot>

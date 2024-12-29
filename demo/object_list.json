@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Dining Table",
+        "position": {
+            "x": 6,
+            "y": -1,
+            "z": 1
+        },
+        "reason": "Large obstacle directly in the path"
+    },
+    {
+        "name": "Chairs",
+        "position": {
+            "x": 5,
+            "y": -1.5,
+            "z": 1
+        },
+        "reason": "Obstacles around the table, need to navigate around"
+    },
+    {
+        "name": "Kitchen Counter",
+        "position": {
+            "x": 8,
+            "y": 0,
+            "z": 1
+        },
+        "reason": "Fixed structure in the robot's path"
+    },
+    {
+        "name": "Hallway",
+        "position": {
+            "x": 2,
+            "y": -2,
+            "z": 1
+        },
+        "reason": "Open space for navigation, clear path"
+    }
+]

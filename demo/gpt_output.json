@@ -1,0 +1,56 @@
+{
+    "objects": [
+        {
+            "name": "chair",
+            "position": {
+                "x": 4.7,
+                "y": -0.8,
+                "z": 1.0
+            },
+            "reason": "potential obstacle"
+        },
+        {
+            "name": "table",
+            "position": {
+                "x": 4.8,
+                "y": -0.3,
+                "z": 1.0
+            },
+            "reason": "potential obstacle"
+        },
+        {
+            "name": "end_table",
+            "position": {
+                "x": 4.4,
+                "y": -0.2,
+                "z": 1.0
+            },
+            "reason": "potential obstacle"
+        },
+        {
+            "name": "bar_stool",
+            "position": {
+                "x": 5.0,
+                "y": 0.0,
+                "z": 1.0
+            },
+            "reason": "potential obstacle"
+        },
+        {
+            "name": "flower_vase",
+            "position": {
+                "x": 6.0,
+                "y": 0.2,
+                "z": 1.0
+            },
+            "reason": "potential obstacle"
+        }
+    ],
+    "next_move_point": {
+        "x": 6.6,
+        "y": 0.2,
+        "z": 1.0,
+        "yaw": 0.05,
+        "reason": "proceed down the hallway while avoiding obstacles"
+    }
+}
