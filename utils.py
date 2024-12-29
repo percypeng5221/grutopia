@@ -3,7 +3,7 @@ import cv2
 import json
 
 # OpenAI API Key
-api_key = "sk-svcacct-gHtCthbU9u01CYJxc3GjV6WgZ3ZnCR10hMf1MDXxJCSguAWTc4SisTEwP5JdnYmZT3BlbkFJ5mYjNXEel_mkN0wmwOPx5X15o7yKp0ATeCe8mq9-6dlI1L5VP8lIV4X8iyXCPNcA"
+api_key = " "
 headers = {
   "Content-Type": "application/json",
   "Authorization": f"Bearer {api_key}"
